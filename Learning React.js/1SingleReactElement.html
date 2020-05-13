@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>React Project</title>
+	<script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+	<script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+
+</head>
+<body>
+	<div id="root"></div>
+	<script type="text/javascript"> //What's the difference betn adding script to head vs body
+		ReactDOM.render(
+			React.createElement(
+				"h1", 
+				{"style": {"color":"red"}}, 
+				"Hello World"),
+			document.getElementById("root")
+			); //first arg = to create element h1 with property= an object defined by {} and the child element(text)="Hello World"
+		//second arg = where to create. here: add to div
+	</script>
+</body>
+</html>

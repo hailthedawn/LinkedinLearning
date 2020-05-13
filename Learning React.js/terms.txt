@@ -1,0 +1,15 @@
+Attribute: refers to CSS attributes
+Element: could be a h1 (heading) or a div. Could have an id.
+div: used as a wrapper for >1 element
+Scope: things (styles/scripts) defined in the <head> are global for the entire file (?).
+
+Class: In CSS, an id attribute begins with "#" and a class begins with "." Multiple elements can have the same class, but an id attribute only describes one element.
+
+Component: The way a React application represents a UI element. Lets you define an element with independent reusable pieces. A function returning a UI can be a component. NAMES MUST START WITH UPPERCASE LETTER whether it be a const or a class.
+	--- (ideally, make this a class extending React.Component, and define the render method. Every time the state changes, render() is called again.)
+	- you can treat this as a tag in JSX. When you call ReactDOM.render(), you pass it in like <ComponentName/>
+	- 
+Props: an object in React that contains properties about the component. Using props, we can display dynamic content. It gets passed into the component's anon function.
+	- can define fields on it that can be used in them function signature as long as they're passed in when the component is called (ref 5.)
+
+=> : use parentheses for elements to be returned. {} will treat it as code, so {return...} will need to be used
